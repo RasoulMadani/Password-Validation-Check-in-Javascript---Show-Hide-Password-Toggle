@@ -1,0 +1,53 @@
+<!--
+/* ﷲ  ﷽  ﷲ  ﷽   ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ.. 
+|:          **** بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ****           :|
+|:     ⚡☝..✍-☝..✍-☝..✍-☝..✍-☝..✍-☝..✍⚡   :|
+|:               ⌚ in the name of allah ⌛              :|
+﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>allah</title>
+  </head>
+  <body>
+    <di class="box">
+      <div class="inputBox">
+        <input type="password" id="pswrd" placeholder="Password" />
+        <span id="toggleBtn"></span>
+      </div>
+      <div class="validation">
+        <ul>
+          <li id="lower">At least one lowercase character</li>
+          <li id="upper">At least one uppercase character</li>
+          <li id="number">At least one number</li>
+          <li id="special">At least one special character</li>
+          <li id="length">At least 8 characters</li>
+        </ul>
+      </div>
+    </di>
+    <script>
+      let pswrd = document.getElementById("pswrd");
+      let toggleBtn = document.getElementById("toggleBtn");
+      toggleBtn.onclick = function () {
+        if (pswrd.type === "password") {
+          pswrd.setAttribute("type", "text");
+          toggleBtn.classList.add('hide');
+        } else {
+          pswrd.setAttribute("type", "password");
+          toggleBtn.classList.remove('hide');
+        }
+      };
+    </script>
+  </body>
+</html>
